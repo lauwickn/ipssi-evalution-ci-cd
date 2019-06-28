@@ -19,4 +19,4 @@ deploy:
     secure: "7b2485ec-0809-49f4-8969-362aa43fd9c8"
   app: ipssi-evaluation-ci-cd
   on:
-    all_branches: true
+    branch: dev
