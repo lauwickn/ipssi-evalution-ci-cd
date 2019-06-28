@@ -10,4 +10,4 @@ cache: npm
 script:
   -  ./node_modules/.bin/retire
   -  ./node_modules/.bin/twly
-  -  ./node_modules/.bin/JsHint /src
+  -  ./node_modules/.bin/JsHint src/
