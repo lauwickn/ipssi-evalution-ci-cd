@@ -10,7 +10,7 @@ cache: npm
 script:
     -  ./node_modules/.bin/retire
     - if [ "$TRAVIS_BRANCH" = "master" ]; then "./node_modules/.bin/twly"; fi
-    -  ./node_modules/.bin/jshint ./src/*
+    -  "./node_modules/.bin/jshint ./src/"
 
 
 deploy:
