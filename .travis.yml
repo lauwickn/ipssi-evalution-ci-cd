@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - "7"
+  - "12"
 
 before_install:
   - npm install
@@ -8,6 +8,13 @@ before_install:
 cache: npm
 
 script:
-  -  ./node_modules/.bin/retire
-  -  ./node_modules/.bin/twly
-  -  ./node_modules/.bin/jshint /src/
+    -  ./node_modules/.bin/retire
+    -  ./node_modules/.bin/twly
+    -  ./node_modules/.bin/jshint /src/
+
+
+deploy:
+  provider: heroku
+  api_key:
+    secure: "7b2485ec-0809-49f4-8969-362aa43fd9c8"
+  app: ipssi-evaluation-ci-cd
